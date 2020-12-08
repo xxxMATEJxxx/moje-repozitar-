@@ -22,9 +22,10 @@ def resetCanvas():
 	draw_symmetriclines((random.randint(120,190)),(random.randint(370,430)),(random.randint(260,320)),(random.randint(420,470)), "#"+str((random.randint(100000,999999))), (random.randint(1,22)))
 	textjmeno=listjmen[random.randint(0,99)]
 	jmenotext=C.create_text(250, 25, font=("Comic Sans MS",35), text=textjmeno)
-	vektext=C.create_text(250 ,70, font=("Comic Sans MS",25), text=vekcislo)
+	vekcislo=(random.randint(0,100))
+	vektext=C.create_text(250 ,70, font=("Comic Sans MS",25), text='Věk: '+str(vekcislo))
 	
-smazatbutton=Button(text='novy', command=resetCanvas)
+smazatbutton=Button(text='dej mi nového robota!',font=("Comic Sans MS",12), command=resetCanvas)
 smazatbutton.pack()
 
 
@@ -124,7 +125,7 @@ jmenotext=C.create_text(250, 25, font=("Comic Sans MS",35), text=textjmeno)
 
 
 vekcislo=(random.randint(0,100))
-vektext=C.create_text(250 ,70, font=("Comic Sans MS",25), text=vekcislo)
+vektext=C.create_text(250 ,70, font=("Comic Sans MS",25), text='Věk: '+str(vekcislo))
 	
 	
 C.pack()
